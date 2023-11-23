@@ -85,9 +85,9 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1288px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 24px;
 }
 
 .section-title {
@@ -205,13 +205,46 @@ ul {
 }
 
 /* Advantages-section */
-.advantages-text {
+.advantages-list {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
   color: #000000;
   line-height: 1.33;
+  align-items: center;
+}
+
+.advantages-list-content {
+  flex-basis: calc((100% - 40px) / 3);
+  text-align: center;
 }
 
 /* Procedures-section */
-.procedures-text {
+.procedures-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.procedures-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 16px;
+}
+
+.procedures-item {
+  flex-basis: calc((100% - 32px) / 3);
+  height: 456px;
+  background-image: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    var(--color-primary-dark) 101.39%
+  );
+  border-radius: 4px 120px 4px 120px;
   color: #ffffff;
   font-size: 22px;
 }
