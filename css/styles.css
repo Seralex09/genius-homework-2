@@ -90,6 +90,10 @@ ul {
   padding: 0 24px;
 }
 
+.section {
+  padding: 48px 0;
+}
+
 .section-title {
   font-family: 'Play', sans-serif;
   font-size: 64px;
@@ -137,6 +141,14 @@ ul {
 }
 
 /* Hero section */
+.hero-section {
+  padding: 126px 0;
+  background-image: url(../images/hero-section-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
 .hero-container {
   width: 100%;
   max-width: 529px;
@@ -180,6 +192,10 @@ ul {
 }
 
 /* Information-section */
+.information-section {
+  padding-bottom: 128px;
+}
+
 .information-container {
   display: flex;
   align-items: flex-start;
@@ -219,6 +235,7 @@ ul {
 .advantages-list-content {
   flex-basis: calc((100% - 40px) / 3);
   text-align: center;
+  fill: var(--color-primary-light);
 }
 
 /* Procedures-section */
@@ -250,10 +267,58 @@ ul {
 }
 
 /* Contacts-section */
+.contacts-section {
+  padding-bottom: 96px;
+}
+
+.contacts-container {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  gap: 32px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 423px;
+  border-radius: 32px;
+  background-color: var(--color-primary-dark);
+}
+
+.contacts-container h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-primary-white);
+}
+
+.contacts-container .accent {
+  color: var(--color-primary-light);
+}
 
 /* Footer */
 .footer {
+  padding: 56px 0;
   background-color: var(--color-primary-dark);
+}
+
+.footer-container {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  gap: 24px;
+  flex-basis: 50%;
+}
+
+.footer-logo,
+.footer-menu,
+.address-list,
+.address-info {
+  flex-grow: 1;
 }
 
 .footer-link {
@@ -264,6 +329,12 @@ ul {
 
 .footer-link:hover {
   font-weight: 500;
+}
+
+.footer-link-social-networks {
+  display: flex;
+  gap: 24px;
+  fill: var(--color-primary-white);
 }
 
 .address-copyright {
