@@ -400,6 +400,7 @@ ul {
 
 .footer-link:hover {
   font-weight: 500;
+  color: var(--color-primary-light);
 }
 
 .footer-link-social-networks {
